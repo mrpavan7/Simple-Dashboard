@@ -1,55 +1,85 @@
-# React + TypeScript + Vite
+# Simple Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive dashboard application built with React, TypeScript, and Tailwind CSS. Features a collapsible sidebar, dark mode support, and data visualization capabilities.
 
-Currently, two official plugins are available:
+[Live Demo](https://article-board.web.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Preview](https://article-board.web.app/preview.png)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎨 Modern UI with Tailwind CSS
+- 🌓 Light/Dark mode support
+- 📱 Responsive design
+- 🎯 Collapsible sidebar with keyboard shortcuts
+- 📊 Data visualization with Recharts
+- 🔒 TypeScript for type safety
+- ⚡ Powered by Vite for fast development
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Tech Stack
+
+- React 19
+- TypeScript
+- Tailwind CSS V4
+- Vite
+- Shadcn UI
+- Recharts
+- Lucide Icons
+- Tabler Icons
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/mrpavan7/Simple-Dashboard
+cd simple-dashboard
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
-# Simple-Dashboard
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Project Structure
+
+```
+src/
+├── components/         # React components
+│   ├── ui/            # Reusable UI components
+│   └── ...            # Feature-specific components
+├── lib/               # Utilities and data
+├── hooks/            # Custom Hooks
+└── App.tsx           # Main application component
+```
+
+## Keyboard Shortcuts
+
+- `Ctrl/Cmd + B`: Toggle sidebar
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- UI components inspired by [shadcn/ui](https://ui.shadcn.com/)
+- Icons from [Lucide](https://lucide.dev/) and [Tabler](https://tabler.io/icons)
+- Charts powered by [Recharts](https://recharts.org/)
