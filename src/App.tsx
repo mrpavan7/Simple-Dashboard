@@ -1,3 +1,10 @@
+import { AppSidebar } from "@/components/app-sidebar";
+import { SidebarProvider } from "./components/ui/sidebar";
+
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <SidebarProvider>
+      <AppSidebar />
+    </SidebarProvider>
+  );
 }
