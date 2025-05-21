@@ -1,12 +1,9 @@
 import * as React from "react";
 import {
-  AudioWaveform,
   BadgeCent,
   BellRing,
-  Command,
   Crown,
   FileText,
-  GalleryVerticalEnd,
   GitFork,
   IdCard,
   Info,
@@ -27,6 +24,11 @@ import {
 } from "@/components/ui/sidebar";
 import AppTitle from "./app-title";
 import { Separator } from "./ui/separator";
+import {
+  IconBrandAmazon,
+  IconBrandCashapp,
+  IconBrandFirebase,
+} from "@tabler/icons-react";
 
 // This is sample data.
 const data = {
@@ -38,17 +40,17 @@ const data = {
   teams: [
     {
       name: "amazon.com",
-      logo: GalleryVerticalEnd,
+      logo: IconBrandAmazon,
       plan: "Enterprise",
     },
     {
-      name: "flipkart.com",
-      logo: AudioWaveform,
+      name: "firebase.com",
+      logo: IconBrandFirebase,
       plan: "Startup",
     },
     {
       name: "creatiwise.com",
-      logo: Command,
+      logo: IconBrandCashapp,
       plan: "Free",
     },
   ],
