@@ -1,19 +1,21 @@
 import * as React from "react";
 import {
   AudioWaveform,
-  BookOpen,
-  Bot,
+  BadgeCent,
+  BellRing,
   Command,
-  Frame,
+  Crown,
+  FileText,
   GalleryVerticalEnd,
-  Map,
-  PieChart,
-  Settings2,
-  SquareTerminal,
+  GitFork,
+  IdCard,
+  Info,
+  Link,
+  MessageSquareDot,
+  Plug,
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
-import { NavProjects } from "@/components/nav-projects";
 import { NavUser } from "@/components/nav-user";
 import { TeamSwitcher } from "@/components/team-switcher";
 import {
@@ -51,29 +53,57 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Articles",
       url: "#",
-      icon: SquareTerminal,
+      icon: FileText,
       isActive: true,
       items: [
         {
-          title: "History",
+          title: "Create Articles",
           url: "#",
         },
         {
-          title: "Starred",
+          title: "Generated Articles",
           url: "#",
         },
         {
-          title: "Settings",
+          title: "Keyword Projects",
+          url: "#",
+        },
+        {
+          title: "AI Keyword to Article",
+          url: "#",
+        },
+        {
+          title: "Steal Competitor Keyword",
+          url: "#",
+        },
+        {
+          title: "Import Keyword from GSC",
+          url: "#",
+        },
+        {
+          title: "Manual Keyword to Article",
+          url: "#",
+        },
+        {
+          title: "Bulk Keyword to Article",
+          url: "#",
+        },
+        {
+          title: "Longtail Keyword to Article",
+          url: "#",
+        },
+        {
+          title: "Article Settings",
           url: "#",
         },
       ],
     },
     {
-      title: "Models",
+      title: "Auto Blog",
       url: "#",
-      icon: Bot,
+      icon: IdCard,
       items: [
         {
           title: "Genesis",
@@ -90,9 +120,9 @@ const data = {
       ],
     },
     {
-      title: "Documentation",
+      title: "Internal Links",
       url: "#",
-      icon: BookOpen,
+      icon: GitFork,
       items: [
         {
           title: "Introduction",
@@ -113,44 +143,39 @@ const data = {
       ],
     },
     {
-      title: "Settings",
+      title: "Free Backlinks",
       url: "#",
-      icon: Settings2,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
-    },
-  ],
-  projects: [
-    {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
+      icon: Link,
     },
     {
-      name: "Sales & Marketing",
+      title: "Integrations",
       url: "#",
-      icon: PieChart,
+      icon: Plug,
     },
     {
-      name: "Travel",
+      title: "Subscription",
       url: "#",
-      icon: Map,
+      icon: Crown,
+    },
+    {
+      title: "Affiliate Program",
+      url: "#",
+      icon: BadgeCent,
+    },
+    {
+      title: "Help Center",
+      url: "#",
+      icon: Info,
+    },
+    {
+      title: "Updates",
+      url: "#",
+      icon: BellRing,
+    },
+    {
+      title: "Live Chat Support",
+      url: "#",
+      icon: MessageSquareDot,
     },
   ],
 };
@@ -164,7 +189,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
